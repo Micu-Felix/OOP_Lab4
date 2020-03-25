@@ -35,6 +35,7 @@ public:
     void add_med(std::string name, float concentrare, int anzahl, float pret );
     void bearbeiten(std::string name, float concentrare);
     void loschen(std::string name, float concentrare);
+    void knapp();
     void anzeigen(std::string substring);
     void sort_preis();
 

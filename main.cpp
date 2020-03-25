@@ -7,5 +7,6 @@ int main() {
     Smile.add_med("Xanax",50,21,300);
     Smile.add_med("Paracetamol",25,2,30);
     Smile.anzeigen("ceva");
+    Smile.knapp();
     return 0;
 }
