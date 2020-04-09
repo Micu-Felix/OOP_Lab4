@@ -18,10 +18,15 @@ void Teste() {
     assert(Smile.Grosse() == 2);
     Smile.redo();
     assert(Smile.Grosse() == 3);
-    Smile.loschen("Parasinus", 25);
+    Smile.loschen("Paracetamol", 25);
 
     assert(Smile.Grosse() == 2);
+    Smile.add_med("Danax", 50, 21, 300);
+    Smile.add_med("Ranax", 50, 21, 300);
+    Smile.loschen("Danax", 50);
+    assert(Smile.Grosse() == 3);
+    //Smile.anzeigen("*");
     Smile.sort_preis();
-
+    //Smile.anzeigen("*");
     std::cout << '\n' << "Tests over" << '\n';
 }

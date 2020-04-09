@@ -24,14 +24,14 @@ public:
      * @param anzahl
      * @param pret
      */
-    void add_med(std::string name, float concentrare, int anzahl, float pret);
+    void add_med(const std::string& name, float concentrare, int anzahl, float pret);
 
     /**
      * Loschen eines Medikaments
      * @param name
      * @param concentrare
      */
-    void loschen(std::string name, float concentrare);
+    void loschen(const std::string& name, float concentrare);
 
     /**
      * Anzeigen alle Medikamente, dessen Anzahl kleiner ist als der eingegebene Wert
@@ -44,7 +44,7 @@ public:
      *   enthalt
      * @param substring
      */
-    void anzeigen(std::string substring);
+    void anzeigen(const std::string& substring);
 
     /**
      * Gruppiert die Medikamente nach dem Preis
@@ -69,7 +69,7 @@ public:
  * @param pret
  * @return
  */
-    bool bearbeiten(std::string name, float concentrare, int anz, float pret);
+    bool bearbeiten(const std::string& name, float concentrare, int anz, float pret);
 };
 
 #endif //LAB4_REPOMEDIKAMENT_H
